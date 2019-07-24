@@ -183,3 +183,40 @@ input {
 #submit-button:hover{
     cursor: pointer;
 }
+
+
+/* media queries */
+
+/* for when screen is less than 980px wide */
+@media screen and (max-width: 980px) {
+    
+    main{ 
+        width: 900px; /* Setting width of content on the page */
+        margin-left: 10px;
+        overflow-wrap: normal;
+    }
+
+}
+/* for when screen is less than 768px wide */
+@media screen and (max-width: 768px) {
+    
+    main{ 
+        width: 700px; /* Setting width of content on the page */
+        margin-left: 10px;
+        overflow-wrap: normal;
+    }
+
+}
+/* for when screen is less than 640px wide */
+@media screen and (max-width: 640px) {
+    
+    main{ 
+        width: 580px; /* Setting width of content on the page */
+        margin-left: 10px;
+        overflow-wrap: normal;
+    }
+    header{
+        position: static;
+    }
+
+}
