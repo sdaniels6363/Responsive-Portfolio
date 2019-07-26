@@ -211,7 +211,7 @@ input {
     /* classes */
 
     .navbar{ 
-        width: 900px; /* made more sense to just make this 100% width */
+        width: 900px; 
         margin-left: 20px;
     }
 
@@ -235,26 +235,45 @@ input {
 
 
 }
-/* for when screen is less than 768px wide */
+/* for when screen is  640px < w <= 768px wide */
 @media screen and (max-width: 768px) {
-    
+
+    /* elements */
     main{ 
         width: 700px; /* Setting width of content on the page */
-        margin-left: 10px;
-        overflow-wrap: normal;
+        margin-left: 20px;
+        margin-right: 10px;
+        overflow: auto;
     }
 
+    p, textarea , input {
+        width: 630px; /* Normally set to 900px */
+    }    
+
+    /* classes */
+    .navbar{ 
+        width: 700px; 
+        margin-left: 20px;
+    }
+    .links{ 
+        width: 420px;
+    }
+    .under-construction{
+        margin: 0px 0px 20px 250px;
+    }
+    /* ids */
+    #about-me{
+        width: 650px;
+        padding-bottom: 10px;
+    }
+
+    #cl-trophy-lift{ 
+        margin: 0px 0px 20px 50px; /* adjusting margins to better fit the page. */
+    }
 }
+
 /* for when screen is less than 640px wide */
 @media screen and (max-width: 640px) {
     
-    main{ 
-        width: 580px; /* Setting width of content on the page */
-        margin-left: 10px;
-        overflow-wrap: normal;
-    }
-    header{
-        position: static;
-    }
 
 }
