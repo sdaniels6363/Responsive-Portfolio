@@ -187,14 +187,52 @@ input {
 
 /* media queries */
 
-/* for when screen is less than 980px wide */
+/* for when screen is width is 768px < w <= 980px wide */
 @media screen and (max-width: 980px) {
     
+    /* main elements */
+
     main{ 
-        width: 900px; /* Setting width of content on the page */
-        margin-left: 10px;
-        overflow-wrap: normal;
+        width: 650px; /* Setting width of content on the page */
+        margin-left: 20px;
+        margin-right: 10px;
+        overflow: auto;
     }
+
+    p, textarea , input {
+        width: 580px; /* Normally set to 900px */
+    }
+
+    footer{
+        margin-top: 100px;
+    }
+
+
+    /* classes */
+
+    .navbar{ 
+        width: 900px; /* made more sense to just make this 100% width */
+        margin-left: 20px;
+    }
+
+    .links{
+        width: 500px;
+    }
+
+    .under-construction{
+        margin: 0px 0px 20px 225px;
+    }
+    /* id */
+
+    #about-me{
+        width: 580px;
+        padding-bottom: 10px;
+    }
+
+    #cl-trophy-lift{ 
+        margin: 0px 0px 20px 20px; /* adjusting margins to better fit the page. */
+    }
+
 
 }
 /* for when screen is less than 768px wide */
